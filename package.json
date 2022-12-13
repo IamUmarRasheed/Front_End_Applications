@@ -1,0 +1,26 @@
+{
+  "name": "number_guess_enigma",
+  "version": "1.1.0",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "number_guess_enigma": "numberGuess.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc && node numberGuess.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "inquirer": "^9.1.4",
+    "number_guess_enigma": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/chalk-animation": "^1.6.1",
+    "@types/inquirer": "^9.0.3",
+    "chalk-animation": "^2.0.3"
+  }
+}
