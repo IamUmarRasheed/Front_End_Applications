@@ -19,15 +19,17 @@ import { HamburgerIcon } from "@chakra-ui/icons";
 
 export default function Navbar() {
   return (
-    <Box boxShadow="lg"  >
-      <Container maxW={1400} pl='20px'>
+    <Box boxShadow="lg">
+      <Container maxW={1400} >
         <SimpleGrid
-          templateColumns={{ md: "repeat(3,)",lg: "repeat(3, 1fr)", base: "repeat(2, 1fr)" }}
+          templateColumns={{
+            md: "repeat(3,)",
+            lg: "repeat(3, 1fr)",
+            base: "repeat(2, 1fr)",
+          }}
           py="20px"
-          
-      
-       >
-          <Box >
+        >
+          <Box>
             <Image
               src="/panavers.png"
               alt="panavers_logo"
@@ -35,8 +37,9 @@ export default function Navbar() {
               height={100}
             ></Image>
           </Box>
+
           <Flex
-            display={{ base: "none", md:"flex",lg: "flex" }}
+            display={{ base: "none", md: "none", lg: "flex" }}
             placeItems="center"
             color={"black"}
             fontSize={18}
@@ -44,7 +47,8 @@ export default function Navbar() {
             gap={10}
             mb="5px"
             // width={4}
-            minW="150px" maxW="250px"
+            minW="150px"
+            maxW="250px"
           >
             <Link href="">Home</Link>
             <Link href="">Syllabus</Link>
@@ -53,12 +57,21 @@ export default function Navbar() {
             <Link href="">Contact</Link>
           </Flex>
 
-          <Box display={{ base: "none", md:"initial", lg: "initial" }} >
-            <Button m="10px" size="lg" colorScheme="messenger" float={{base:"none",md:"right",lg:"right"}}>
+          <Box display={{ base: "none", md:"none", lg: "initial" }}>
+            <Button
+              m="10px"
+              size="lg"
+              colorScheme="messenger"
+              float={{ base: "none", md: "none", lg: "right" }}
+            >
               Apply
             </Button>
           </Box>
-          <Box py="10px" display={{ base: "initial", md:"none", lg: "none" }}mx="10px">
+          <Box
+            py="10px"
+            display={{ base: "initial", md: "initial", lg: "none" }}
+            mx="10px"
+          >
             <Menu>
               <MenuButton
                 as={IconButton}

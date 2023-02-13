@@ -1,10 +1,12 @@
-import Navbar from "@/views/navBar/Navbar";
-import { Box } from "@chakra-ui/react";
 
+import Cards from "./homepage/Cards";
+import TOP from "./homepage/TOP";
 
 export default function Home() {
   return (
 <>
+<TOP/>
+<Cards/>
 </>
   )
 }
