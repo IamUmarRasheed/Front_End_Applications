@@ -19,6 +19,7 @@ import { HamburgerIcon } from "@chakra-ui/icons";
 
 export default function Navbar() {
   return (
+    <>
     <Box boxShadow="lg">
       <Container maxW={1400} >
         <SimpleGrid
@@ -53,7 +54,7 @@ export default function Navbar() {
             <Link href="">Home</Link>
             <Link href="">Syllabus</Link>
             <Link href="">Explore</Link>
-            <Link href="">About</Link>
+            <Link href="./about">About</Link>
             <Link href="">Contact</Link>
           </Flex>
 
@@ -81,10 +82,10 @@ export default function Navbar() {
                 variant="outline"
               />
               <MenuList>
-                <MenuItem>Home</MenuItem>
+                <MenuItem><Link href={'/'}> Home</Link></MenuItem>
                 <MenuItem>Syllabus</MenuItem>
                 <MenuItem>Explore</MenuItem>
-                <MenuItem>About</MenuItem>
+                <MenuItem><Link href={'./about'}> About</Link></MenuItem>
                 <MenuItem>Contact</MenuItem>
               </MenuList>
             </Menu>
@@ -92,5 +93,6 @@ export default function Navbar() {
         </SimpleGrid>
       </Container>
     </Box>
+    </>
   );
 }

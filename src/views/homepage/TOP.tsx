@@ -21,6 +21,7 @@ import React from "react";
 import { Card, CardHeader, CardBody, CardFooter } from "@chakra-ui/react";
 export default function TOP() {
   return (
+    <>
     <Box mt={"100px"}>
       <Container maxW={1400}>
         <Flex justifyItems={"center"} direction={{ base: "column", lg: "row" }}>
@@ -68,5 +69,6 @@ export default function TOP() {
         </Flex>
       </Container>
     </Box>
+    </>
   );
 }

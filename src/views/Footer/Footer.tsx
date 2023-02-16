@@ -16,6 +16,7 @@ import { EmailIcon, LinkIcon, PhoneIcon } from "@chakra-ui/icons";
 
 export default function Footer() {
   return (
+    <>
     <Box bg="#0c0c0c" >
       <Container maxW={1400}>
         <SimpleGrid
@@ -23,9 +24,9 @@ export default function Footer() {
           templateColumns={{ base: "repeat(1, 1fr)", lg: "repeat(4, 1fr)" }}
           spacing="30px"
           py="60px"
-        >
+         px={'70px'}>
           <Box>
-            <Heading pb="20px" color="white">
+            <Heading as={'h5'} pb="20px" color="white">
               About US
             </Heading>
             <Grid justifyContent={{ base: "center", lg: "start" }}>
@@ -43,7 +44,7 @@ export default function Footer() {
             </Text>
           </Box>
           <Box>
-            <Heading color="white">Useful Links</Heading>
+            <Heading  as={'h5'} color="white">Useful Links</Heading>
 
             <Grid pt="50" color="skyblue">
               <Link href="/">Home</Link>
@@ -54,7 +55,7 @@ export default function Footer() {
             </Grid>
           </Box>
           <Box>
-            <Heading color="white">Follow Us</Heading>
+            <Heading  as={'h5'} color="white">Follow Us</Heading>
 
             <Grid pt="50px" color="skyblue">
               <Link href="/">Facebook</Link>
@@ -65,7 +66,7 @@ export default function Footer() {
             </Grid>
           </Box>
           <Box>
-            <Heading color="white">Contact Us</Heading>
+            <Heading  as={'h5'} color="white">Contact Us</Heading>
 
             <Grid
               pt="50px"
@@ -89,5 +90,6 @@ export default function Footer() {
         </SimpleGrid>
       </Container>
     </Box>
+    </>
   );
 }

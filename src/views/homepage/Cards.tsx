@@ -19,6 +19,7 @@ import React from "react";
 import { Card, CardHeader, CardBody, CardFooter } from "@chakra-ui/react";
 export default function Cards() {
   return (
+    <>
     <Box>
       <Container maxW={1400} mb="10px" my={"60px"}>
         <Flex
@@ -100,6 +101,9 @@ export default function Cards() {
                 <Center>
                   {/* <Stack mt='6' spacing='3'> */}
                   <Text fontWeight={"bold"}>Internet of Things and AI Specialist</Text>
+                  <Box>
+                    
+                  </Box>
                 
                 </Center>
                 {/* </Stack> */}
@@ -109,5 +113,6 @@ export default function Cards() {
         </Flex>
       </Container>
     </Box>
+    </>
   );
 }
