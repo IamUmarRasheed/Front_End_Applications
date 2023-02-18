@@ -55,7 +55,7 @@ export default function Navbar() {
             <Link href="">Syllabus</Link>
             <Link href="">Explore</Link>
             <Link href="./about">About</Link>
-            <Link href="">Contact</Link>
+            <Link href="./Contact">Contact</Link>
           </Flex>
 
           <Box display={{ base: "none", md:"none", lg: "initial" }}>

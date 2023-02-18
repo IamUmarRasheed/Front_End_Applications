@@ -15,15 +15,15 @@ export default function Banner() {
                 Prepare yourself for the Next Generation of Internet with
                 Panaverse
               </Heading>
-              <Text pb={'25px'} lineHeight={'30px'}>
+              <Text pb={'25px'} lineHeight={'30px'} fontSize='md'>
                 One Year Panaverse DAO Earn as you Learn Program. Consolidating
                 Web 3.0, Metaverse, Artificial Intelligence (AI), Cloud, Edge,
                 and Ambient Computing/IoT Technologies
               </Text>
               <Button colorScheme={'linkedin'}>More info</Button>
             </Box>
-            <Box ml={'50px'} flexBasis={"50%"} mt={{base:'40px' ,lg:'0'}}> 
-              <Image  src="/metavers.png" alt="Metavers" width={400} height={400}>
+            <Box ml={'50px'} flexBasis={"50%"} mt={{base:'40px' ,lg:'0'}} > 
+              <Image  src="/metavers.png" alt="Metavers" width={400} height={400}   >
 
               </Image>
             </Box>
@@ -67,9 +67,9 @@ export default function Banner() {
               </Text>
               <Button colorScheme={'linkedin'}>More info</Button>
             </Box>
-            <Box  flexBasis={"50%"}>
+            <Box  flexBasis={"50%"} >
               {" "}
-              <Image src={'/metaverse2.png'} alt='metavers-2' width={700} height={600}></Image>
+              <Image   src={'/metaverse2.png'} alt='metavers-2' width={700} height={600}></Image>
             </Box>
           </Flex>
         </Container>
