@@ -22,8 +22,8 @@ import { Card, CardHeader, CardBody, CardFooter } from "@chakra-ui/react";
 export default function TOP() {
   return (
     <>
-    <Box mt={"100px"}>
-      <Container maxW={1400}>
+    <Box >
+      <Container maxW={1400} >
         <Flex justifyItems={"center"} direction={{ base: "column", lg: "row" }}>
           <Box w={{base:'280px' ,lg:"500px"}}  justifyContent={{base:"center", md:"end" , lg: "start"}} ml="50px">
             <Image
@@ -55,7 +55,7 @@ export default function TOP() {
                 <Link as={NextLink} isExternal textDecoration={'none'} href="https://portal.piaic.org/signup">
                 <Button colorScheme={"teal"} px={{ base: "30px", lg: "auto" }}>
                   {" "}
-                  APPLY{" "}
+                  APPLY
                 </Button>
                 </Link>
                 <Divider orientation="vertical" />

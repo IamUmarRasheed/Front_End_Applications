@@ -1,12 +1,12 @@
 "use client"
 import { Box, Center, Container, Flex, Heading, Image ,Text} from '@chakra-ui/react'
 import React from 'react'
-import { data } from './datastore'
+import { data } from '../utils/data/datastore'
 
 export default function Instructor() {
   return (
     <Box  py={'50px'}>
-            <Container maxW={1400} >
+            <Container maxW={1520} >
                 <Center>
                     <Heading mb={'20px'} >Our Instructors</Heading>
                 </Center>
@@ -17,7 +17,7 @@ export default function Instructor() {
                                 <Image borderRadius='full' width={90} height={90} src={ins.src} />
                             </Center>
                             <Heading textAlign='center' size='md'>{ins.heading}</Heading>
-                            <Text px='30px' fontSize='sm' textAlign='center'>{ins.text}</Text>
+                            <Text pt={"30px"} px='30px' fontSize='sm' textAlign='center'>{ins.text}</Text>
                         </Box>
                     ))}
                 </Flex>

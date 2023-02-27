@@ -18,13 +18,13 @@ export default function Footer() {
   return (
     <>
     <Box bg="#0c0c0c" >
-      <Container maxW={1400}>
+      <Container maxW={1520}>
         <SimpleGrid
           textAlign={{ lg: "start", base: "center" }}
           templateColumns={{ base: "repeat(1, 1fr)", lg: "repeat(4, 1fr)" }}
           spacing="30px"
           py="60px"
-         px={'70px'}>
+         px={'90px'}>
           <Box>
             <Heading as={'h5'} pb="20px" color="white">
               About US
@@ -54,7 +54,7 @@ export default function Footer() {
               <Link href="/">Contact</Link>
             </Grid>
           </Box>
-          <Box>
+          <Box >
             <Heading  as={'h5'} color="white">Follow Us</Heading>
 
             <Grid pt="50px" color="skyblue">

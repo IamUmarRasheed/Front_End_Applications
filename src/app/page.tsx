@@ -1,7 +1,7 @@
 
-import Banner from "@/views/Banner";
-import Cards from "../views/homepage/Cards";
-import TOP from "../views/homepage/TOP";
+import Banner from "@/views/home/Banner";
+import Cards from "../views/About/Cards";
+import TOP from "../views/About/TOP";
 // import Myimg from "@/views/icontent/myimg";
 
 export default function Home() {

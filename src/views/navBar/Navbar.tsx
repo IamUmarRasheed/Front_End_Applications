@@ -20,8 +20,8 @@ import { HamburgerIcon } from "@chakra-ui/icons";
 export default function Navbar() {
   return (
     <>
-    <Box boxShadow="lg">
-      <Container maxW={1400} >
+    <Box boxShadow="lg"  >
+      <Container maxW={1520}   position='fixed' bg={'ButtonShadow'} >
         <SimpleGrid
           templateColumns={{
             md: "repeat(3,)",
@@ -52,7 +52,7 @@ export default function Navbar() {
             maxW="250px"
           >
             <Link href="">Home</Link>
-            <Link href="">Syllabus</Link>
+            <Link href="/Syllabus">Syllabus</Link>
             <Link href="">Explore</Link>
             <Link href="./about">About</Link>
             <Link href="./Contact">Contact</Link>
@@ -83,7 +83,7 @@ export default function Navbar() {
               />
               <MenuList>
                 <MenuItem><Link href={'/'}> Home</Link></MenuItem>
-                <MenuItem>Syllabus</MenuItem>
+                <MenuItem ><Link href={'/'}> Syllabus</Link></MenuItem>
                 <MenuItem>Explore</MenuItem>
                 <MenuItem><Link href={'./about'}> About</Link></MenuItem>
                 <MenuItem>Contact</MenuItem>

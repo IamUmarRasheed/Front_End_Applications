@@ -1,7 +1,23 @@
 import React from 'react'
-import Home from '@/views/Home'
-export default function page() {
+import Contactpage from '@/views/contactPage'
+import Home from '@/components/Home'
+export default function App() {
   return (
-    <Home src='pics43.jpg' title='Contact Us'/>
+  
+    <>  
+<Home src='pics43.jpg' title='Contact Us'/>
+ <Contactpage/>
+    </>
+
+
+
+
+
+
+
+
+
+
+
   )
 }

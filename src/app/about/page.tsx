@@ -1,10 +1,10 @@
 "use client ";
-import Home from "@/views/Home";
-import Cards from "@/views/homepage/Cards";
-import TOP from "@/views/homepage/TOP";
+import Home from "@/components/Home";
+import Cards from "@/views/About/Cards";
+import TOP from "@/views/About/TOP";
 
 import React from "react";
-import Instructor from "@/views/Instructor";
+import Instructor from "@/components/Instructor";
 
 export default function page() {
   return (
