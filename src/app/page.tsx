@@ -1,91 +1,41 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from './page.module.css'
+import Loginform from './components/Loginform'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
+    <section className=" ">
+      <Loginform />
+      <div className='-mt-[410px] '>
+        <svg
+          width="100%"
+          height="0%"
+          id="svg"
+          viewBox="0 0 1440 390"
+          xmlns="http://www.w3.org/2000/svg"
+          className="transition duration-300 ease-in-out delay-150"
         >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+          <path
+            d="M 0,400 C 0,400 0,133 0,133 C 136.26666666666665,155.13333333333333 272.5333333333333,177.26666666666668 419,171 C 565.4666666666667,164.73333333333332 722.1333333333334,130.06666666666666 894,119 C 1065.8666666666666,107.93333333333334 1252.9333333333334,120.46666666666667 1440,133 C 1440,133 1440,400 1440,400 Z"
+            stroke="none"
+            stroke-width="0"
+            fill="#0693e3"
+            fill-opacity="0.53"
+            className="transition-all duration-300 ease-in-out delay-150 path-0"
+          ></path>
+          <path
+            d="M 0,400 C 0,400 0,266 0,266 C 161.2,287.8666666666667 322.4,309.7333333333333 461,297 C 599.6,284.2666666666667 715.5999999999999,236.93333333333337 875,226 C 1034.4,215.06666666666663 1237.2,240.5333333333333 1440,266 C 1440,266 1440,400 1440,400 Z"
+            stroke="none"
+            stroke-width="0"
+            fill="#0693e3"
+            fill-opacity="1"
+            className="transition-all duration-300 ease-in-out delay-150 path-1"
+          ></path>
+        </svg>
       </div>
-    </main>
-  )
+    </section>
+  );
 }
